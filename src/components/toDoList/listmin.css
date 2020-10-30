@@ -1,0 +1,46 @@
+.listmin {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  overflow-y: auto;
+  border: 3px solid black;
+  width: 250px;
+  height: 300px;
+  background-color: #44c7fd;
+}
+
+.input-add {
+  border: 1px solid cornflowerblue;
+}
+
+.input-add {
+  outline: none;
+  padding: 7px;
+  margin: 8px;
+}
+
+.add-button {
+  background: blue;
+  color: #fff;
+  border: none;
+  padding: 7px;
+  outline: none;
+}
+
+.listmin-li {
+  margin-left: -25px;
+  width: 210px;
+  padding: 5px;
+  margin-top: 20px;
+  justify-content: center;
+  border: none;
+  background: #a1e3fd;
+  border-radius: 3px;
+  list-style: none;
+  text-align: left;
+  font-size: 15px;
+}

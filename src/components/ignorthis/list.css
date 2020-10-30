@@ -1,0 +1,14 @@
+.list {
+  text-align: center;
+  margin: 10px;
+}
+
+.li {
+  border: 1px solid cadetblue;
+  height: 20px;
+  width: 200px;
+  background-color: aquamarine;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}

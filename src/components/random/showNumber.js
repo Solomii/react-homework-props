@@ -6,7 +6,7 @@ class ShowNumber extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={(event) => this.props.func(Math.random())}>
+        <button onClick={() => this.props.func(Math.random())}>
           Click me!
         </button>
       </div>
