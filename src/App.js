@@ -3,7 +3,7 @@ import Search from "./components/search/search";
 import Title from "./components/title/title";
 import Number from "./components/random/number";
 // import List from "./components/list/list";
-// import Listmax from "./components/listmax/listmax";
+import Listmax from "./components/toDoList/listmax.js";
 import Listmin from "./components/toDoList/listmin.js";
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App() {
       <Title title="Введіть число:" />
       <Number answer="" />
       {/* <List /> */}
-      {/* <Listmax /> */}
+      <Listmax />
       <Listmin />
     </div>
   );
