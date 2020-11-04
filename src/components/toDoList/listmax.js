@@ -5,17 +5,19 @@ class Listmax extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: " ",
-      list: [
-        { title: "Wake up", checked: false },
-        { title: "Eat breakfast", checked: false },
-        { title: "Go to work", checked: false },
+      lists: [
+        {id:0, title: "Wake up", checked: false },
+        {id:1, title: "Eat breakfast", checked: false },
+        {id:2, title: "Go to work", checked: false },
       ],
+      editing: [],
       flag: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleFlagChange = this.handleFlagChange.bind(this);
     this.handleList = this.handleList.bind(this);
+    this.handlNewToDo = this.handlNewToDo(this);
+    this.handleDelete = this.handleDelete(this);
     this.addItemToTheList = this.addItemToTheList.bind(this);
   }
 
@@ -27,8 +29,26 @@ class Listmax extends React.Component {
     this.setState({ flag: !this.state.flag });
   }
 
+  handlNewToDo (todo) {
+    this.setState((state, props) => ({todos: [...state.lists, todo]}));
+  }
+
+  handleDelete = (id, ind) => {
+    this.setState((state, props) => ({todos: state.todos.filter(t => t.id !== id)}))
+  }
+
+  handleMarkEdit = (id) => {
+    this.setState((state, props) => ({editing: [...state.editing, id]}))
+  }
+  handleEdit = (todo) => {
+    this.setState((state, props) => ({
+      todos: state.todos.map(t => t.id === todo.id ? {...t, ...todo} : t),
+      editing: state.editing.filter(id => todo.id !== id)
+    }));
+  }
+
   handleList() {
-    return this.state.list.map(function (item) {
+    return this.state.lists.map(function (item) {
       return (
         <li className="listmax-li" key={item.title}>
           {item.title}

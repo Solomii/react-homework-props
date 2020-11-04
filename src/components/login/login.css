@@ -1,0 +1,16 @@
+.loginForm {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.loginForm-wrapper {
+  background: purple;
+  height: 230px;
+  width: 400px;
+}
+
+.loginForm-wraper-form {
+}

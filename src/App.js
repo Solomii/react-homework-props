@@ -5,6 +5,8 @@ import Number from "./components/random/number";
 // import List from "./components/list/list";
 import Listmax from "./components/toDoList/listmax.js";
 import Listmin from "./components/toDoList/listmin.js";
+// import Login from "./components/login/login";
+import LoginFormik from "./components/loginFormik/loginFormik";
 import "./App.css";
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       {/* <List /> */}
       <Listmax />
       <Listmin />
+      {/* <Login /> */}
+      <LoginFormik />
     </div>
   );
 }
