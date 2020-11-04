@@ -1,0 +1,18 @@
+.login-formik {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.login-formik-wrapper {
+  border: 1px solid black;
+  background: rgb(100, 39, 197);
+  height: 200px;
+  width: 500px;
+}
+
+.form {
+  border-radius: 3px;
+}
