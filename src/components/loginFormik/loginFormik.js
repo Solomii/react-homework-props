@@ -70,7 +70,7 @@ function LoginFormik() {
                 />
               </p>
               {touched.password && errors.password && (
-                <p className={"error"}>{errors.password}</p>
+                <p className="error">{errors.password}</p>
               )}
               <div>
                 <input
@@ -80,7 +80,7 @@ function LoginFormik() {
                 />{" "}
                 Keep me signed in
                 {touched.toggle && errors.toggle && (
-                  <p className={"error"}>{errors.toggle}</p>
+                  <p className="error">{errors.toggle}</p>
                 )}
               </div>
               <button

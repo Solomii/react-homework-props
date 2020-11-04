@@ -3,7 +3,7 @@ import Search from "./components/search/search";
 import Title from "./components/title/title";
 import Number from "./components/random/number";
 // import List from "./components/list/list";
-import Listmax from "./components/toDoList/listmax.js";
+// import Listmax from "./components/toDoList/listmax.js";
 import Listmin from "./components/toDoList/listmin.js";
 // import Login from "./components/login/login";
 import LoginFormik from "./components/loginFormik/loginFormik";
@@ -16,9 +16,9 @@ function App() {
       <Title title="Введіть число:" />
       <Number answer="" />
       {/* <List /> */}
-      <Listmax />
+      {/* <Listmax Все що закоментовано не Дивися!! Це доробляю!!!!!!/> */}
       <Listmin />
-      {/* <Login /> */}
+      {/* <Login Це доробляю!!!!! /> */}
       <LoginFormik />
     </div>
   );
